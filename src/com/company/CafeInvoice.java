@@ -56,8 +56,6 @@ public static void userPrompt() {
             taxRate = 0.06;
         } else taxRate = 0.05;
 
-
-
         System.out.println();
         System.out.println("Customer Invoice");
         System.out.println("----------------------------------------");
@@ -65,17 +63,12 @@ public static void userPrompt() {
         System.out.println("Transaction Date: ");
         System.out.println();
         System.out.println("Name" + "\n" + "name" + "\n" + "Price" + "\n" + "Quantity" + "\n" + "Subtotal");
-//                for(Invoice itemList:) {
-//                System.out.println(itemList.getCustomerName() + "\n" + itemList.getItems() + "\n" +
-//                itemList.getTransactionDate() + "\n" + itemList.() + "\n" + itemList.getClass());
 
         System.out.println();
         System.out.println("Subtotal: $"  + subTotal);
         double finalTotal= (subTotal + taxRate);
         System.out.println("Tax: " + taxRate);
         System.out.println("Grand Total: $" + finalTotal);
-
-
 
 }
     }
