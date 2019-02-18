@@ -1,32 +1,68 @@
 package com.company;
 
-import java.util.ArrayList;
 
 public class Item {
-
-//Define variables:
-
-    private String name;
+    private String customerName;
+    private String customerAddress;
+    private String date;
+    private String accountNumber;
+    private String item;
     private double price;
-    private double quanity;
-    private double subTotal;
-    private double finalTotal;
-    boolean taxable;
-    private ArrayList<Invoice> variables;
-
-//Default Constructor:
+    private int quantity;
+    private boolean taxable;
 
     public Item() {
     }
 
-
-    //Getters & Setters
-    public String getName() {
-        return name;
+    public Item(String customerName, String customerAddress, String date, String accountNumber, String item, double price, int quantity, boolean taxable) {
+        this.customerName = customerName;
+        this.customerAddress = customerAddress;
+        this.date = date;
+        this.accountNumber = accountNumber;
+        this.item = item;
+        this.price = price;
+        this.quantity = quantity;
+        this.taxable = taxable;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCustomerAddress() {
+        return customerAddress;
+    }
+
+    public void setCustomerAddress(String customerAddress) {
+        this.customerAddress = customerAddress;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
     }
 
     public double getPrice() {
@@ -37,28 +73,12 @@ public class Item {
         this.price = price;
     }
 
-    public double getQuanity() {
-        return quanity;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setQuanity(double quanity) {
-        this.quanity = quanity;
-    }
-
-    public double getSubTotal() {
-        return subTotal;
-    }
-
-    public void setSubTotal(double subTotal) {
-        this.subTotal = subTotal;
-    }
-
-    public double getFinalTotal() {
-        return finalTotal;
-    }
-
-    public void setFinalTotal(double finalTotal) {
-        this.finalTotal = finalTotal;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public boolean isTaxable() {
@@ -67,19 +87,5 @@ public class Item {
 
     public void setTaxable(boolean taxable) {
         this.taxable = taxable;
-    }
-
-
-//Overloaded Constructor
-
-    public Item(String name, double price, double quanity, double subTotal, double finalTotal, boolean taxable) {
-        this.name = name;
-        this.price = price;
-        this.quanity = quanity;
-        this.subTotal = subTotal;
-        this.finalTotal = finalTotal;
-        this.taxable = taxable;
-
-
     }
 }
