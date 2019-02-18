@@ -59,6 +59,13 @@ public class CafeInvoice {
             things.add(new Item(name, address, date, accnumber, itemname, price, quantity, taxable));
 
         } while (!end.equalsIgnoreCase("NO"));
+        System.out.println();
+        System.out.println("Customer Invoice");
+        System.out.println("----------------------------------------");
+        System.out.println("Customer Name: ");
+        System.out.println("Transaction Date: ");
+        System.out.println();
+        System.out.println("Name" + "\n" + "name" + "\n" + "Price" + "\n" + "Quantity" + "\n" + "Subtotal");
 
         DecimalFormat df = new DecimalFormat("# .00");
 
@@ -79,5 +86,7 @@ public class CafeInvoice {
 
         }
 
+
     }
+
 }
